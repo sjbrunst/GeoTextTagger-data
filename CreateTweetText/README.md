@@ -23,3 +23,5 @@ where `input-file` is the path to a parquet file containing the tweets you wish 
 Note that the output will be divided into many text files. To combine them into a single file, you can run
 
 `cat output-path/part-* > output-file`
+
+Output will be in the same format as the data files in ../Data. See the Readme file there for details.

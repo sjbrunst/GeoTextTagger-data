@@ -23,3 +23,5 @@ Assuming you have downloaded Spark 1.4.1 into the root of this repository, you c
 `../spark-1.4.1-bin-hadoop1/bin/spark-submit --class CreateWikiData -- master local[4] ./target/scala-2.10/createwikidata_2.10-1.0.jar`
 
 Note that the output will be divided into many text files. To combine them into a single file, you can run `cat outputFile/part-* > newOutputFile`
+
+Output will be in the same format as the data files in ../Data. See the Readme file there for details.
