@@ -2262,7 +2262,7 @@ def process_dump(input_file, template_file, outdir, file_size, file_compress, th
 
     # start worker threads
     workers = []
-    for _ in xrange(max(1, threads - 1)): # keep one for master
+    for _ in xrange(max(1, threads - 1)): # keep one for main
         output_splitter = OutputSplitter(nextFile, file_size, file_compress)
         extractor = ExtractorThread(queue, output_splitter)
         workers.append(extractor)
